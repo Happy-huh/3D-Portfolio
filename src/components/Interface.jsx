@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useAtom } from "jotai";
 import { currentProjectAtom, projects } from "./Projects";
+import { useState } from "react";
 
 const Section = (props) => {
   const { children } = props;
@@ -48,10 +49,10 @@ const AboutSection = (props) => {
       <h1 className="text-6xl font-extrabold leading-snug">
         Hi, I'm
         <br />
-        <span className="bg-white px-1 italic">Wawa Sensei</span>
+        <span className="bg-white px-1 italic">Onyedika Akujieze</span>
       </h1>
       <motion.p
-        className="text-lg text-gray-600 mt-4"
+        className="text-white text-gray-600 mt-4"
         initial={{
           opacity: 0,
           y: 25,
@@ -65,9 +66,9 @@ const AboutSection = (props) => {
           delay: 1.5,
         }}
       >
-        I make YouTube videos to help developers
+        I'm software engineer and web developer
         <br />
-        learn how to build 3D apps
+        I build web/mobile apps and provide innovative software solutions
       </motion.p>
       <motion.button
         onClick={() => setSection(3)}
@@ -94,39 +95,35 @@ const AboutSection = (props) => {
 
 const skills = [
   {
-    title: "Threejs / React Three Fiber",
+    title: "Python",
+    level: 90,
+  },
+  {
+    title: "Javascript / Typescript",
     level: 80,
   },
   {
-    title: "React / React Native",
+    title: "Django",
     level: 90,
   },
   {
-    title: "Nodejs",
-    level: 90,
+    title: "React / React-Native",
+    level: 80,
   },
   {
-    title: "Typescript",
+    title: "Node.js",
     level: 60,
-  },
-  {
-    title: "3D Modeling",
-    level: 40,
   },
 ];
 const languages = [
-  {
-    title: "🇫🇷 French",
-    level: 100,
-  },
   {
     title: "🇺🇸 English",
     level: 80,
   },
   {
-    title: "🇯🇵 Japanese",
-    level: 20,
-  },
+    title: "🇫🇷 French",
+    level: 30,
+  }
 ];
 
 const SkillsSection = () => {
@@ -259,47 +256,22 @@ const ProjectsSection = () => {
 };
 
 const ContactSection = () => {
+
   return (
     <Section>
-      <h2 className="text-5xl font-bold">Contact me</h2>
-      <div className="mt-8 p-8 rounded-md bg-white w-96 max-w-full">
-        <form>
-          <label for="name" className="font-medium text-gray-900 block mb-1">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
-          />
-          <label
-            for="email"
-            className="font-medium text-gray-900 block mb-1 mt-8"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
-          />
-          <label
-            for="email"
-            className="font-medium text-gray-900 block mb-1 mt-8"
-          >
-            Message
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            className="h-32 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
-          />
-          <button className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 ">
-            Submit
-          </button>
-        </form>
+      <h2 className="text-5xl font-bold">Let's Work Together</h2>
+      <div className="mt-8 p-8 rounded-md bg-rgba(255, 255, 255, 0.795) w-96 max-w-full">
+        <div>
+
+          <h3 style={{fontSize: '25px', fontWeight:"bolder"}}>Mail</h3>
+          <p style={{fontSize: '18px', fontWeight:"bold"}}>onyedikas019@gmail.com</p>
+          <h3 style={{fontSize: '25px', fontWeight:"bolder", marginTop: '1em'}}>Phone</h3>
+          <p style={{fontSize: '18px', fontWeight:"bold"}}>+2348100678916</p>
+          
+          <a href="mailto:onyedikas019@gmail.com" style={{position: "relative", top: 30}} className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 ">
+            Write Me an Email
+          </a>
+        </div>
       </div>
     </Section>
   );

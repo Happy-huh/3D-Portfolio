@@ -23,11 +23,11 @@ function LoadingScreen(props) {
                     style={{width: `${progress}%`}}
                 >
                 
-                Wawa Sensei
+                Onyedika
                 
                 </div>
             
-            <div className="opacity-40"> Wawa Sensei</div>
+            <div className="opacity-40">Onyedika</div>
             </div>
         </div>
     );

@@ -8,34 +8,28 @@ import { useEffect, useRef } from "react";
 
 export const projects = [
   {
-    title: "Wawatmos",
-    url: "https://r3f-wawatmos-final.vercel.app/",
-    image: "projects/wawatmos.jpg",
-    description: "Recreating the Atmos Awwwards website with React Three Fiber",
+    title: "Movie App",
+    url: '#',
+    image: "projects/movieapp.png",
+    description: "A database of every movie ever created get to know more about your favorite movies (Download available in the main portfolio site)",
   },
   {
-    title: "Portfolio Baking",
-    url: "https://www.youtube.com/watch?v=YkHqpqJgLKw",
-    image: "projects/baking.jpg",
-    description: "Learn how to bake a 3D model with Blender and use it in r3f",
+    title: "Video Chat-app",
+    url: "https://zoom-clone-wb4u.onrender.com",
+    image: "projects/zoom.png",
+    description: "a re-implementation of zoom, where people can make safe video calls that are end-to-end encrypted",
   },
   {
-    title: "3D Avatar",
-    url: "https://www.youtube.com/watch?v=pGMKIyALcK0",
-    image: "projects/avatar.jpg",
-    description: "Learn how to use ReadyPlayerMe to create a 3D avatar",
+    title: "Hotelina",
+    url: "https://steven019.pythonanywhere.com/",
+    image: "projects/hotel.png",
+    description: "A platform where individuals and hotel owners can list their rooms for bookings",
   },
   {
-    title: "Kanagame",
-    url: "https://www.youtube.com/watch?v=zwNF1-lsia8",
-    image: "projects/kanagame.jpg",
-    description: "Use React Three Fiber to create a 3D game",
-  },
-  {
-    title: "Loader",
-    url: "https://www.youtube.com/watch?v=L12wIvuZTOY",
-    image: "projects/loader.jpg",
-    description: "Create a loading screen for your r3f projects",
+    title: "Weather App",
+    url: "https://weatherapp-ud3j.onrender.com/",
+    image: "projects/weatherapp.png",
+    description: "A visually appealing weather app with current and up-to-date weather information",
   },
 ];
 

@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react";
 export const projects = [
   {
     title: "Movie App",
-    url: 'https://onyedika.onrender.com/projects/movieupdates.apks',
+    url: 'https://onyedika.onrender.com/projects/movieupdates.apk',
     image: "projects/movieapp.png",
     description: "A database of every movie ever created get to know more about your favorite movies (Download available in the main portfolio site)",
   },
